@@ -1,0 +1,7 @@
+#!/bin/sh
+
+/usr/sbin/adduser --disabled-password --gecos "" quilttest
+
+su -c ./test.sh quilttest
+
+/usr/sbin/deluser quilttest
