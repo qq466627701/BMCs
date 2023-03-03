@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/include/c++/7/**",
+                "/usr/include/x86_64-linux-gnu/c++/7/**",
+                "/usr/include/c++/7/backward/**",
+                "/usr/lib/gcc/x86_64-linux-gnu/7/include/**",
+                "/usr/local/include/**",
+                "/usr/include/x86_64-linux-gnu/**",
+                "/usr/include/**",
+                "/home/ubuntu/bmcweb/intel-ipmi-oem/include/**",
+                "/usr/include/c++/9/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}

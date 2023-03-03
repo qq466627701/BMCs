@@ -1,0 +1,3 @@
+/home/ubuntu/bmcweb/TEST/build/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/bmcweb/TEST/build/CMakeFiles/edit_cache.dir
+/home/ubuntu/bmcweb/TEST/build/CMakeFiles/hello.dir
