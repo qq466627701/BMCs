@@ -1,24 +1,12 @@
-#include<iostream>
-#include<memory>
-
+#include <iostream>
 using namespace std;
- 
-class Base{
-    public:
-     virtual void func(){
-        cout<<"this is base"<<endl;
-    }
-};
-class Derived:public Base{
-    public:
-    virtual void func(){
-        cout<<"this is derived"<<endl;
-    }
-    Derived();
-};
-int main (void){
-    Base a;
-    Derived b;
-    Base *c=new Derived();
-    c->func();
+int main(void){
+    uint16_t a;
+    class A{
+        int a = 1;
+    };
+    A a1;
+    cout<<typeid(a).name()<<endl;
+    std::cout<<typeid(A&).name()<<std::endl;
+    return 0;
 }

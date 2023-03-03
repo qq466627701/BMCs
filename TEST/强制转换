@@ -1,0 +1,34 @@
+#include <iostream>
+//#include <typeinfo>
+using namespace std;
+ 
+void test() {
+    char ch = 'a';
+    short sh = 10;
+    int i1 = static_cast<char>(ch);//成功，将char型数据转换成int型数据
+    int i2 = static_cast<short>(sh);
+    
+    cout<<i1<<endl;  //97
+    cout<<i2<<endl;  //10
+ 
+    double *d = new double;
+    void *v = static_cast<void*>(d);//成功，将double指针转换成void指针
+ 
+    cout<<v<<endl;  //0x7f7f9ec05960
+ 
+ 
+    int i = 20;
+    const int iConst = static_cast<const int>(i);//成功，将int型数据转换成const int型数据
+ 
+    cout<<iConst<<endl;  //20
+ 
+    const int jConst = 30;
+    //int *p = static_cast<int*>(&jConst);//error: static_cast from 'const int *' to 'int *' is not allowed
+}
+ 
+int main()
+{
+    test();
+ 
+    return 0;
+}
